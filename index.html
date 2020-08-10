@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+    <center><img src="images/logo.png" alt="" id="logo" style="width: 200px;"></center>
+    <!-- <nav>
+        <ul id="navbar">
+            <li>Language:</li>
+        </ul>
+    </nav> -->
+</header>
+<div class="account">
+    <center><p>You don't have an account yet, please create a new account</p></center>
+</div>
+<hr>
+<div class="container">
+    <h2>Create New Account</h2>
+    <!-- TITLE -->
+    <div>
+        <label for="title"><b>Title</b></label>
+        <div class="form">
+            <div class="form-check">
+                <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="Mrs" value="something">Mrs
+                </label>
+                &emsp;
+                <label class="form-check-label" for="check2">
+                    <input type="checkbox" class="form-check-input" id="check2" name="Ms" value="something">Ms
+                </label>
+                &emsp;
+                <label class="form-check-label" for="check3">
+                    <input type="checkbox" class="form-check-input" id="check3" name="Mdm" value="something">Mdm
+                </label>
+                &emsp;
+                <label class="form-check-label" for="check4">
+                    <input type="checkbox" class="form-check-input" id="check4" name="Mr" value="something">Mr
+                </label>
+                &emsp;
+                <label class="form-check-label" for="check5">
+                    <input type="checkbox" class="form-check-input" id="check5" name="Dr" value="something">Dr
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- NAME FORM -->
+    <form action="">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="first"><b>First Name</b></label>
+                    <input type="text" class="form-control" id="first" placeholder="First Name" name="first" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="last"><b>Last Name</b></label>
+                    <input type="text" class="form-control" id="last" placeholder="Last Name" name="last" required>
+                </div>
+            </div>
+        </div>
+    </form>
+
+<!-- MOBILE FORM -->
+    <form action="">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="first"><b>Mobile Phone Number</b></label>
+                    <input type="number" class="form-control" id="phone" placeholder="Mobile Phone Number" name="phone" required>
+                </div>
+            </div>
+        </div>
+    </form>
+    <hr>
+<!-- ADDRESS FORM -->
+
+    <h2>Address</h2>
+
+    <form action="">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm">
+                    <label for="address"><b>Address</b></label>
+                    <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="first"><b>Country/Location</b></label>
+                    <select class="form-control" id="first" placeholder="First Name" name="first" required></select>
+                </div>
+                <div class="col-sm-6">
+                    <label for="last"><b>Province/District</b></label>
+                    <select class="form-control" id="last" placeholder="Last Name" name="last" required></select>
+                </div>
+            </div>
+        </div>
+    </form>
+    <hr>
+<!-- CONTACT FORM -->
+
+    <h2>Contacts</h2>
+    <form action="">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="text" class="form-control" id="email" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="birth"><b>Date of Birth</b></label>
+                    <select class="form-control" id="birth" placeholder="DD" name="birth" required></select>
+                </div>
+                <div class="col-sm-2">
+                    <label for="month"><b>Month</b></label>
+                    <select class="form-control" id="month" placeholder="MM" name="month" required></select>
+                </div>
+                <div class="col-sm-2">
+                    <label for="year"><b>Year</b></label>
+                    <input type="number" class="form-control" id="year" placeholder="YYYY" name="year">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+    <h2>Standard Privacy Note</h2>
+    <div class="form-check">
+        <label class="form-check-label" for="check6">
+            <input type="checkbox" class="form-check-input" id="check6" name="policies" value="something">I have read and understood the above terms and conditions and hereby agree that I will be bounded by these conditions and policies once I have submitted this application form.
+        </label>
+    </div>
+    <br>
+    <hr>
+    
+    <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Submit</button>
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Confirm</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            Are you sure to want Confirm?
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">OK</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+        </div>
+    </div>
+    </div>
+    <br>
+</div>
+<script src="country.js"></script>
+</body>
+</html>
